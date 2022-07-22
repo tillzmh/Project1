@@ -6,32 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji Finder</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
-    <section class="hero is-success">
-        <div class="hero-body">
-          <p class="title">
-            Emoji Finder
-          </p>
-        </div>
-    </section>
+
+    <section class="hero is-success is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item has-text-weight-semibold is-size-3">
+                Emoji Finder
+              </a>
+              <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Examples
+                </a>
+                <a class="navbar-item">
+                  Documentation
+                </a>
+                <span class="navbar-item">
+                  <a class="button is-primary is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     
-        <div class="container">
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="container is-fluid has-text-centered">
             <form class="box">
                 <div class="field">
-                  <label class="label">Type your Emoji</label>
+                  <label class="label">Find your Emoji</label>
                   <div class="control">
-                    <input class="input" type="email" placeholder="Emoji Type">
+                    <input class="input has-text-centered" type="text" placeholder="Emoji Type">
                   </div>
                 </div>
-              
-
-              
                 <button class="button is-primary">Search</button>
               </form>
         </div>
-      </section>
+        </div>
+      </div>
+    
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li><a>About Project</a></li>
+              <li><a>About Us</a></li>
+              <li><a>More Info</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
     
 </body>
 </html>
