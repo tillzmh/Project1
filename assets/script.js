@@ -16,6 +16,7 @@ modalBg.addEventListener('click', () => {
 
 let emojiCache = [];
 
+
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();
     if (!emojiCache.length) {
@@ -32,3 +33,7 @@ searchButton.addEventListener('click', (e) => {
         ? result?.htmlCode
         : "not found";
 });
+
+function websiteVisits(response){
+    document.querySelector("#visits").textContent = response.value;
+}
