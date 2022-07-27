@@ -29,9 +29,11 @@ searchButton.addEventListener('click', (e) => {
     const result = emojiCache.find((emoji) => {
          return emoji.name.startsWith(searchText.value.toLowerCase().trim());
     });
+    //const searchTextInput = localstorage.getItem("search-input")
     document.getElementById("emoji-results").innerHTML=result?.htmlCode
         ? result?.htmlCode
         : "not found";
+    localStorage.setItem('search-input',searchText.value);
 });
 
 function websiteVisits(response){
@@ -40,4 +42,5 @@ function websiteVisits(response){
 fetch('https://api.countapi.xyz/hit/emojifinder/6cdfd2d2-c20b-493d-a449-946af8a1bc80')
 .then(response => response.json())
 .then(websiteVisits);
+
 
