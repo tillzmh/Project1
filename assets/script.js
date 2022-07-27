@@ -37,3 +37,7 @@ searchButton.addEventListener('click', (e) => {
 function websiteVisits(response){
     document.querySelector("#visits").textContent = response.value;
 }
+fetch('https://api.countapi.xyz/hit/emojifinder/6cdfd2d2-c20b-493d-a449-946af8a1bc80')
+.then(response => response.json())
+.then(websiteVisits);
+
